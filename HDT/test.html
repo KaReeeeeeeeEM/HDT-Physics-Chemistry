@@ -1,0 +1,168 @@
+<?php
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Requests</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+            scroll-behavior: smooth;
+            font-family: poppins, Arial, Helvetica, sans-serif;
+        }
+
+        @keyframes grow {
+            0% {
+                transform:scale(.5);
+            }
+            100% {
+                transform:scale(1);
+            }
+        }
+        
+        @keyframes shrink {
+            0% {
+                display: none;
+                transition:2s ease-in-out;
+            }
+            100% {
+                display:flex;
+                transition:2s ease-in-out;
+            }
+        }
+
+        .team-section{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding:2rem auto;
+            background-color: rgb(133, 229, 133);
+            border-top:8px dashed #fff;
+        }
+
+        .team-section .head{
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .team {
+            display:flex;
+            height: auto;
+            align-items: center;
+            justify-content: space-around;
+            padding:2rem auto;
+            background-color: rgb(133, 229, 133);
+            animation: grow 2s;
+            transition:.2s ease-in-out;
+        }
+
+        .team .member{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            margin:2rem auto;
+            animation: grow 2.2s;
+            transition:.2s ease-in-out;
+        }
+        
+        .team .member .pic{
+            width:300px;
+            height:300px;
+            border-radius: 50%;
+            margin:2rem auto;
+            outline: 4px solid #ddd;
+            background-color: rgb(81, 161, 81);
+        }
+
+        .name h3{
+            color: green;
+        }
+
+        .category h4{
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+    <!---- Body Section   -->
+    <div class="team-section">
+        <div class="head">
+            <h2 onclick="reveal()">Meet the crew</h2>
+        </div>
+
+        <div class="team"  id="team">
+            <div class="member">
+                <div class="pic">
+
+                </div>
+                <div class="name">
+                    <h3>Hazen</h3>
+                </div>
+                <div class="category">
+                    <h4>Physics Department</h4>
+                </div>
+            </div>
+            
+            <div class="member">
+                <div class="pic">
+
+                </div>
+                <div class="name">
+                    <h3>Dalton</h3>
+                </div>
+                <div class="category">
+                    <h4>Chemistry Department</h4>
+                </div>
+            </div>
+            
+            <div class="member">
+                <div class="pic">
+
+                </div>
+                <div class="name">
+                    <h3>Thomas</h3>
+                </div>
+                <div class="category">
+                    <h4>Students Consultant</h4>
+                </div>
+            </div>
+            
+            <div class="member">
+                <div class="pic">
+
+                </div>
+                <div class="name">
+                    <h3>Joan</h3>
+                </div>
+                <div class="category">
+                    <h4>Practical Organizer</h4>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+<script>
+    const b = document.getElementById("team");
+
+    let reveal = () =>{
+        if(b.style.display != "none"){
+             b.style.display = "none";
+             b.style.animation = "shrink 2s";
+
+        } else {
+            b.style.display = "flex";
+            b.style.animation = "grow 2s";
+        }
+    }
+</script>
+</body>
+</html>

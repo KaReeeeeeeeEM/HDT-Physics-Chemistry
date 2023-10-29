@@ -1,0 +1,430 @@
+*{
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: poppins, Arial, Helvetica, sans-serif, Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* For the navigation section */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    border-bottom:2px dashed #ddd;
+    background-color: rgb(81, 177, 81);
+    /* rgb(115, 231, 115) */
+}
+
+@keyframes grow {
+    0% {
+        transform:scale(.5);
+    }
+    100% {
+        transform:scale(1);
+    }
+}
+
+.nav .logo{
+    margin-left: 2rem;
+}
+
+.nav .logo a{
+    text-decoration: none;
+    color: #eee;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+.nav .links ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.nav .links ul li.admin{
+    color:rgb(58, 161, 58);
+    border: 2px dashed rgb(56, 175, 56);
+    border-radius:1.5rem;
+    background-color: #ddd;
+}
+
+.nav .links ul li.admin:hover{
+    background-color: rgb(117, 199, 117);
+    border: 2px dashed #ddd;
+    color: #ddd;
+}
+
+.nav .links ul a{
+    text-decoration:none;
+}
+
+.nav .links ul a li{
+    text-align: center;
+    padding:0.5rem 2rem;
+    color: #ddd; 
+    font-size: 1.2rem;
+    font-weight:700;
+    transition:.4s ease-in-out;
+}
+
+.nav .links ul a li:hover{
+    color: rgb(155, 233, 155);
+}
+
+
+/* For the Hero section */
+.hero-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom:4rem;
+    border-bottom: 8px dashed #eee;
+    background-color: rgb(81, 177, 81);
+}
+
+.hero-section .hero-image{
+    height:400px;
+    width:30%;
+    margin:4rem 0;
+    border-radius: 0.5rem;
+    /* background-color: rgb(141, 219, 141); */
+}
+
+.hero-image img{
+    width:100%;
+    height:400px;
+}
+
+.hero-section .hero-descriptions{
+    width:61%;
+}
+
+.hero-section .hero-descriptions .description h1{
+    color:#eee;
+    font-size: 2.5rem;
+    margin-bottom:1rem;
+}
+
+.hero-section .hero-descriptions .description p{
+    color: #ddd;
+    margin-bottom:5rem;
+}
+
+.hero-descriptions .buttons{
+    display: flex;
+    width:50%;
+    margin: 3rem 1rem;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.hero-descriptions .buttons .see-more a, .hero-descriptions .buttons .join a{
+    text-decoration: none;
+    color: #ddd;
+    outline: 3px dashed #ddd;
+    padding:0.5rem 3rem;
+    border-radius: 1rem;
+    transition: .4s ease-in-out;
+}
+
+.hero-descriptions .buttons .see-more a:hover, .hero-descriptions .buttons .join a:hover{
+    background-color: #ddd;
+    color: rgb(65, 192, 65);
+}
+
+/* For the About section */
+.about-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ddd;
+    margin: 0 auto;
+    transition: 5s ease-in-out;
+}
+
+.about-section .about-heading{
+    margin: 6rem auto 4rem;
+}
+
+.about-section .about-heading h1{
+    color:#4d4d4d;
+    margin-bottom: 4rem;
+}
+
+.about-section .about-description{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.about-section .about-description .description{
+    width:20%;
+    padding-bottom:7rem;
+    border-bottom: 8px dotted rgb(80, 207, 80);
+}
+
+.about-section .about-description .description p{
+    color: rgb(11, 163, 11);
+}
+
+/* For the Image Section */
+.image-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(88, 190, 88);
+    border-top: 8px dotted #ddd;
+}
+
+.image-section .in-div1:hover,.image-section .div2:hover, .image-section .div3:hover{
+    transition: 1s ease-in-out;
+    background: radial-gradient(circle, rgb(135, 212, 135), rgb(110, 212, 110), rgb(88, 190, 88));
+}
+
+.image-section .image-head{
+    margin-top: 2rem;
+}
+
+.image-section .image-head h1{
+    color: #ddd;
+    margin-bottom: 3rem;
+}
+
+.image-section .div1{
+    display: flex;
+    width: 60%;
+    margin-bottom: 0.3rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.image-section .div1 .img1{
+    height: 450px;
+    width: 49%;
+    margin-top: 1rem;
+    background-color: rgb(125, 206, 125);
+}
+
+.image-section .div1 .in-div1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 49%;
+    margin-top: 0.9rem;
+    justify-content: space-around;
+}
+
+.image-section .div1 .in-div1 .img2, .image-section .div1 .in-div1 .img3{
+    height:219.5px;
+    width: 100%;
+    margin:0.3rem 0;
+    background-color: rgb(125, 206, 125);
+}
+
+.image-section .div2{
+    width: 59.5%;
+    height: 500px;
+    background-color: rgb(125, 206, 125);
+}
+
+.image-section .div3{
+    display: flex;
+    width: 60%;
+    margin-top: 0.5rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.image-section .div3 .img5, .image-section .div3 .img6{
+    width: 49.5%;
+    height: 350px;
+    margin-bottom: 3rem;
+    background-color: rgb(125, 206, 125);
+}
+
+/* For the call-to-action section */
+.call-to-action{
+    background-color: #ddd;
+    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 8px dotted rgb(52, 141, 52);
+    border-bottom: 8px dashed rgb(87, 175, 87);
+}
+
+.call-to-action .description{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.call-to-action .description .heading{
+    margin: 1rem auto;
+}
+
+.call-to-action .description .heading h2{
+    color: #333;
+    font-size:1.7rem;
+}
+
+.call-to-action .description .explanation{
+    margin-bottom: 3rem;
+}
+
+.call-to-action .description .button{
+    margin: 0.2rem auto;
+}
+
+.call-to-action .description .button a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    font-weight: 700;
+    color: rgb(70, 161, 70);
+    transition: .5s ease-in-out;
+    border: 4px dashed rgb(48, 129, 48);
+}
+
+.call-to-action .description .button a:hover{
+    background-color: rgb(56, 143, 56);
+    color: #ddd;
+}
+
+.call-to-action .image{
+    height: 400px;
+    width: 40%;
+    margin-bottom: 3rem;
+    /* background-color: rgb(125, 206, 125); */
+}
+
+.call-to-action .image img{
+    width:100%;
+    height:400px;
+}
+
+/* for the team section */
+    .team-section{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding:2rem auto;
+        background-color: rgb(133, 229, 133);
+    }
+
+    .team-section .head{
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .team {
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        padding:2rem auto;
+        background-color: rgb(133, 229, 133);
+    }
+
+    .team .member{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin:2rem auto;
+    }
+
+    .team .member .pic{
+        width:300px;
+        height:300px;
+        border-radius: 50%;
+        margin:2rem auto;
+        outline: 4px solid #ddd;
+        background-color: rgb(81, 161, 81);
+    }
+
+    .name h3{
+        color: green;
+    }
+
+    .category h4{
+        color: #333;
+    }
+
+
+/* For the footer */
+.footer{
+    background-color: rgb(87, 175, 87);
+    display: flex;
+    padding:2rem 0 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .map-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    justify-content: space-between;
+}
+
+.footer .map-section .direction h3{
+    text-align: center;
+    margin-left: 1.5rem;
+}
+
+.footer .contacts-section .logo a{
+    text-decoration: none;
+    color: #ddd;
+}
+
+.footer .map{
+    height: 300px;
+    width: 500px;
+    cursor:pointer;
+    margin-left: 4rem;
+    border-radius: 0.5rem;
+    background-color: rgb(141, 219, 141);
+}
+
+.footer .contacts-section{
+    margin-right: 20rem;
+}
+
+.footer .contacts-section .logo h1{
+    color:#ddd;
+    margin-bottom:2rem;
+}
+
+.contacts h3{
+    color: #222;
+    margin-bottom:1rem;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+
+.social-media .media{
+    height: 50px;
+    width: 60px;
+}
+
+.social-media .media img{
+    width:100%;
+    height:50px;
+}

@@ -1,0 +1,50 @@
+<!-- Add an asterisk(*) if the section is complete -->
+<!-- green - [rgb(65, 192, 65)], white - [#eee] -->
+Directions:
+    - Pay with TigoPesa
+    - Theme colors (Green, White) 
+
+Features:
+    - Include a registration form
+    - Include a login system
+    - Group Info (Deals with Psychology and Educational Advice)
+    - Admin page 
+    - Students Page
+
+Website:
+    - Navbar, green
+    - Hero Section, green
+    - About section, white
+    - Image gallery, green
+    - Call to Action, white
+    - Footer, green
+
+Registration Form:
+    - Full Name
+    - Email
+    - Contacts
+    - Place of Residence
+    - Amount Paid
+    - Unpaid Amount(if any)
+
+Login:
+    - Username or Email
+    - Password
+
+Students Page:
+    - View Notes (Previledges should be met)
+    - View YouTube Videos (Previledges should be met)
+    - Payments Section
+    - Conceptuals
+    - View Meetings (Previledges should be met)
+
+Admin Page:
+    - Post Notes
+    - Post YouTube Videos
+    - Create Zoom Meetings
+    - View,accept or decline requests
+    - Payments Section
+    - Conceptuals 
+
+Zoom:
+    - dashboard (us05web.zoom.us)
